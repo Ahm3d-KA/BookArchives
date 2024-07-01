@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using BookArchives.Areas.Identity.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ArchiveUserDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ArchiveUserDbContextConnection' not found.");
+
+builder.Services.AddDbContext<ArchiveUserDbContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<BookArchivesUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ArchiveUserDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -17,6 +25,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.MapRazorPages();
 
 app.UseAuthorization();
 
