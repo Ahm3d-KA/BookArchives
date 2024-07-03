@@ -72,7 +72,7 @@ namespace BookArchives.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            public string UserName { get; set; }
+            public string AccountName { get; set; }
             // public string LastName { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -119,7 +119,7 @@ namespace BookArchives.Areas.Identity.Pages.Account
                 var user = CreateUser();
                 
                 // transfers the inputs from user into the book archives user class to be stored in the database
-                user.UserName = Input.UserName;
+                user.AccountName = Input.AccountName;
                 // user.LastName = Input.LastName;
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);

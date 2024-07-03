@@ -10,4 +10,9 @@ public class ExploreController : Controller
     {
         return View();
     }
+
+    public IActionResult Details()
+    {
+        return View();
+    }
 }
