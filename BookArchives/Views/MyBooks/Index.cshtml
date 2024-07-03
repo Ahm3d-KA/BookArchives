@@ -1,0 +1,60 @@
+﻿@model IEnumerable<UserBooksModel>
+
+@foreach (var obj in Model)
+{
+    <tr>
+        <td width="40%">
+            @obj.BookId
+        </td>
+        <td>
+            @obj.ArchiveUserId
+        </td>
+
+    </tr>
+}
+<div class="overflow-x-auto">
+    <table class="table">
+        <!-- head -->
+        <thead>
+        <tr>
+            <th></th>
+            <th>BookId</th>
+            <th>UserId</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- iterates through obj and puts all the rows in the table -->
+            @foreach (var obj in Model)
+            {
+                <tr class="hover">
+                    <th>1</th>
+                    <td width="40%">
+                        @obj.BookId
+                    </td>
+                    <td>
+                        @obj.ArchiveUserId
+                    </td>
+    
+                </tr>
+            }
+            <tr class="hover">
+                <th>1</th>
+                <td>
+                    thomas
+                </td>
+                <td>
+                    The Lion, the Witch and the Wardrobe
+                </td>
+            </tr>
+            <tr class="hover">
+                <th>2</th>
+                <td>
+                    paddy
+                </td>
+                <td>
+                    Farenheit 451
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>  
