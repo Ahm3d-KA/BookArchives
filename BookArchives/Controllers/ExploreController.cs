@@ -4,6 +4,7 @@ namespace BookArchives.Controllers;
 
 public class ExploreController : Controller
 {
+    
     // GET
     public IActionResult Index()
     {
