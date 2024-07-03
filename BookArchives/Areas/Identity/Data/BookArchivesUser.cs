@@ -9,7 +9,7 @@ namespace BookArchives.Areas.Identity.Data;
 // Add profile data for application users by adding properties to the BookArchivesUser class
 public class BookArchivesUser : IdentityUser
 {
-    public string FirstName { get; set; }   
-    public string LastName { get; set; }
+    public string UserName { get; set; }   
+    // public string LastName { get; set; }
 }
 
