@@ -1,58 +1,74 @@
 ﻿@model IEnumerable<UserBooksModel>
 
-@foreach (var obj in Model)
-{
-    <tr>
-        <td width="40%">
-            @obj.BookId
-        </td>
-        <td>
-            @obj.ArchiveUserId
-        </td>
-
-    </tr>
-}
+<article class="prose">
+    <h1>My  books</h1>
+</article>
 <div class="overflow-x-auto">
     <table class="table">
         <!-- head -->
         <thead>
         <tr>
             <th></th>
-            <th>BookId</th>
-            <th>UserId</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Date read</th>
+            <th>Rating</th>
+            <th>Genre</th>
         </tr>
         </thead>
         <tbody>
         <!-- iterates through obj and puts all the rows in the table -->
-            @foreach (var obj in Model)
-            {
-                <tr class="hover">
-                    <th>1</th>
-                    <td width="40%">
-                        @obj.BookId
-                    </td>
-                    <td>
-                        @obj.ArchiveUserId
-                    </td>
-    
-                </tr>
-            }
+            @* @foreach (var obj in Model) *@
+            @* { *@
+            @*     <tr class="hover"> *@
+            @*         <th>1</th> *@
+            @*         <td width="40%"> *@
+            @*             @obj.BookId *@
+            @*         </td> *@
+            @*         <td> *@
+            @*             @obj.ArchiveUserId *@
+            @*         </td> *@
+            @* *@
+            @*     </tr> *@
+            @* } *@
             <tr class="hover">
                 <th>1</th>
                 <td>
-                    thomas
+                    <a class="link link-primary">
+                        The Lion, the Witch and the Wardrobe
+                    </a>
                 </td>
                 <td>
-                    The Lion, the Witch and the Wardrobe
+                    JR Tolkien
+                </td>
+                <td>
+                    02/08/22
+                </td>
+                <td>
+                    4
+                </td>
+                <td>
+                    Fantasy
                 </td>
             </tr>
             <tr class="hover">
                 <th>2</th>
                 <td>
-                    paddy
+                    <a class="link">
+                        Farenheit 451
+                    </a>
                 </td>
                 <td>
-                    Farenheit 451
+                    Ray Bradley
+                </td>
+                <td>
+                    12/01/21
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    Dystopian
                 </td>
             </tr>
         </tbody>
