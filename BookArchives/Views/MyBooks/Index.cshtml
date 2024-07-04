@@ -1,8 +1,12 @@
 ﻿@model IEnumerable<UserBooksModel>
-
-<article class="prose">
-    <h1>My  books</h1>
-</article>
+<div class="flex flex-row w-full justify-start">
+    <article class="prose mr-auto">
+        <h1>My  books</h1>
+    </article>
+    <div>
+        <a asp-controller="MyBooks" asp-action="Add" class="btn btn-primary">Add a book</a>
+    </div>
+</div>
 <div class="overflow-x-auto">
     <table class="table">
         <!-- head -->

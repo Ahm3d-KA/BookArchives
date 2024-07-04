@@ -1,0 +1,26 @@
+﻿@model OpenLibraryBook
+<form method="post" asp-controller="MyBooks" asp-action="AddPOST">
+    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+    <button type="submit" class="btn btn-active btn-secondary">Search</button>
+</form>
+
+@if (Model!= null)
+{
+    foreach (Document item in Model.docs)
+    {
+        <article class="prose">
+            <p>@item.author_name[0]</p>
+            <p>@item.ddc_sort</p>
+            <p>@item.ratings_average</p>
+            <p>bow hello</p>
+        </article>
+
+    }
+    @* // Add more properties here if needed *@
+}
+else
+{
+    <article class="prose">
+        <h5>Ain't there ma boi</h5>
+    </article>
+}
