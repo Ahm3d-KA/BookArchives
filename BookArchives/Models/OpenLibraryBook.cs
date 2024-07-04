@@ -10,6 +10,7 @@ public class OpenLibraryBook
     public int num_found { get; set; }
     public string q { get; set; }
     public int? offset { get; set; }
+    public string? bookCoverUrl { get; set; }
 }
 
 // "numFound": 145,

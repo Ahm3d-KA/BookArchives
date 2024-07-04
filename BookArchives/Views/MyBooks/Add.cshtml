@@ -9,13 +9,15 @@
     foreach (Document item in Model.docs)
     {
         <article class="prose">
-            <p>@item.author_name[0]</p>
-            <p>@item.ddc_sort</p>
-            <p>@item.ratings_average</p>
+            <p>@item.title
+            @item.author_name[0]
+            @item.ddc_sort
+            @item.ratings_average</p>
             <p>bow hello</p>
         </article>
 
     }
+    <img src="@Model.bookCoverUrl" alt="@Model.docs[0].title"/>
     @* // Add more properties here if needed *@
 }
 else

@@ -35,11 +35,19 @@ public class MyBooksController : Controller
         // replaces spaces with +
         string formattedTitle = title.Replace(" ", "+");
         
+        
         OpenLibraryBook userBook = await SearchBooksAsync(formattedTitle);
+        userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
         return View("Add", userBook);
         
     }
     // returns information about a book after the title is inputted in an object
+    public string CreateCoverUrl(int coverI)
+    {
+        string stringCoverI = coverI.ToString();
+        string url = "https://covers.openlibrary.org/b/id/" + stringCoverI + "-L.jpg";
+        return url;
+    }
     public async Task<OpenLibraryBook> SearchBooksAsync(string userTitle)
     {
         var client = _httpClientFactory.CreateClient();
