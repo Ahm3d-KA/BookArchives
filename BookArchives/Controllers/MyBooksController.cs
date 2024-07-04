@@ -37,7 +37,11 @@ public class MyBooksController : Controller
         
         
         OpenLibraryBook userBook = await SearchBooksAsync(formattedTitle);
-        userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
+        // makes sure it doesn't reference something that is empty 
+        if (userBook.docs != null)
+        {
+            userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
+        }
         return View("Add", userBook);
         
     }
@@ -51,7 +55,7 @@ public class MyBooksController : Controller
     public async Task<OpenLibraryBook> SearchBooksAsync(string userTitle)
     {
         var client = _httpClientFactory.CreateClient();
-        string url = $"https://openlibrary.org/search.json?title="+userTitle+"&limit=1&fields=author_name,cover_i,ddc_sort,title,id_goodreads,subject,number_pages_median,ratings_average,first_publish_year,number_of_pages_median";
+        string url = $"https://openlibrary.org/search.json?title="+userTitle+"&limit=3&fields=author_name,cover_i,ddc_sort,title,id_goodreads,subject,number_pages_median,ratings_average,first_publish_year,number_of_pages_median";
     
         var response = await client.GetAsync(url);
         if (response.IsSuccessStatusCode)
