@@ -30,8 +30,12 @@ public class MyBooksController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> AddPOST(string title)
+    public async Task<IActionResult> FindPOST(string title)
     {
+        if (title == null)
+        {
+            return View("Add");
+        }
         // replaces spaces with +
         string formattedTitle = title.Replace(" ", "+");
         
@@ -42,9 +46,22 @@ public class MyBooksController : Controller
         {
             userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
         }
-        return View("Add", userBook);
+
+        CombinedUserBookOpenLibrary combinedUserBookOpenLibrary = new CombinedUserBookOpenLibrary();
+        combinedUserBookOpenLibrary.OpenLibraryBook = userBook;
+        return View("Add", combinedUserBookOpenLibrary);
         
     }
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult AddPOST(CombinedUserBookOpenLibrary userBook)
+    {
+        return View("Add");
+    }
+    
+    
+    
     // returns information about a book after the title is inputted in an object
     public string CreateCoverUrl(int coverI)
     {

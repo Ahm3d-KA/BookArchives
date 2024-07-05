@@ -7,5 +7,9 @@ module.exports = {
   daisyui: {
     themes: ["nord"]
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")]
+  plugins: [
+      require("@tailwindcss/typography"), 
+      require("daisyui"), 
+      require('flowbite/plugin')
+  ]
 };
