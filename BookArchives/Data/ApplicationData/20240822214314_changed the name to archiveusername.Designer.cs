@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace BookArchives.Data
+namespace BookArchives.Data.ApplicationData
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240703144649_safd")]
-    partial class safd
+    [Migration("20240822214314_changed the name to archiveusername")]
+    partial class changedthenametoarchiveusername
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,7 +33,7 @@ namespace BookArchives.Data
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("BookId")
+                    b.Property<string>("BookName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Text.Json;
-using BookArchives.Data;
+﻿using BookArchives.Data;
 using BookArchives.Models;
 using Microsoft.AspNetCore.Mvc;
+
+
 
 namespace BookArchives.Controllers;
 
@@ -55,9 +55,14 @@ public class MyBooksController : Controller
     
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult AddPOST(CombinedUserBookOpenLibrary userBook)
+    public IActionResult AddPost(UserBooksModel userBook)
     {
-        return View("Add");
+        // userBook.ArchiveUserName = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        userBook.ArchiveUserName = HttpContext.User.Identity.Name;
+        
+        _db.ArchiveDb.Add(userBook);
+        _db.SaveChanges();
+        return View("Index");
     }
     
     

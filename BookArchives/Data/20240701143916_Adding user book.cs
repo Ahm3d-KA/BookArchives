@@ -15,7 +15,7 @@ namespace BookArchives.Data
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ArchiveUserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ArchiveUserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BookId = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

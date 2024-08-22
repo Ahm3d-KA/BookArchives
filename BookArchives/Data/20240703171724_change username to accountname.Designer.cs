@@ -29,7 +29,7 @@ namespace BookArchives.Data
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ArchiveUserId")
+                    b.Property<string>("ArchiveUserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
