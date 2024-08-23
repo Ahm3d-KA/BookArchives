@@ -1,4 +1,5 @@
-﻿using BookArchives.Data;
+﻿using System.Collections;
+using BookArchives.Data;
 using BookArchives.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,7 +21,14 @@ public class MyBooksController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        IEnumerable<UserBooksModel> objUserBooksList = _db.ArchiveDb;
+        List<UserBooksModel> objUserBooksList = new List<UserBooksModel>();
+        foreach (UserBooksModel item in _db.ArchiveDb)
+        {
+            if (item.ArchiveUserName == HttpContext.User.Identity.Name)
+            {
+                objUserBooksList.Add(item);
+            }
+        }
         return View(objUserBooksList);
     }
     public IActionResult Add()
@@ -57,12 +65,38 @@ public class MyBooksController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult AddPost(UserBooksModel userBook)
     {
+        // book wasn't found
+        if (userBook.BookName == null)
+        {
+            return Json(new { status = "error", message = "Book not found" });
+        }
+        bool existsAlready = false;
         // userBook.ArchiveUserName = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        userBook.ArchiveUserName = HttpContext.User.Identity.Name;
-        
-        _db.ArchiveDb.Add(userBook);
-        _db.SaveChanges();
-        return View("Index");
+        // see if database operation works
+        try
+        {
+            userBook.ArchiveUserName = HttpContext.User.Identity.Name;
+            
+            foreach (UserBooksModel item in _db.ArchiveDb)
+            {
+                if (item.ArchiveUserName == userBook.ArchiveUserName && item.BookName == userBook.BookName)
+                {
+                    existsAlready = true;
+                }
+            }
+
+            if (!existsAlready)
+            {
+                _db.ArchiveDb.Add(userBook);
+                _db.SaveChanges();
+            }
+            
+        }
+        catch (Exception e)
+        {
+            return Json(new { status = "error", message = e.Message });
+        }
+        return RedirectToAction("Index", "MyBooks");
     }
     
     

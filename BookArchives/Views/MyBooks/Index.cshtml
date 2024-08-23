@@ -75,6 +75,29 @@
                     Dystopian
                 </td>
             </tr>
+            @{
+                foreach (var item in Model)
+                {
+                    <tr class="hover">
+                        <th>1</th>
+                        <td>
+                            @item.BookName
+                        </td>
+                        <td>
+                            Ray Bradley
+                        </td>
+                        <td>
+                            12/01/21
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Dystopian
+                        </td>
+                    </tr>
+                }
+            } 
         </tbody>
     </table>
 </div>  
