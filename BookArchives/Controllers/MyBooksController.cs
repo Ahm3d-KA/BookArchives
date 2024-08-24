@@ -72,7 +72,7 @@ public class MyBooksController : Controller
         }
         bool existsAlready = false;
         // userBook.ArchiveUserName = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        // see if database operation works
+        // see if database operation works and user is logged in
         try
         {
             userBook.ArchiveUserName = HttpContext.User.Identity.Name;

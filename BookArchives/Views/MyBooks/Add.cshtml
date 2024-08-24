@@ -64,6 +64,13 @@
 
 
             <input type="text" value=@item.title asp-for="UserBook.BookName" />
+            <select class="select select-bordered w-full max-w-xs" asp-for="UserBook.ReadingStatus">
+              <option disabled selected>Reading Status</option>
+              <option>Want to read</option>
+              <option>Reading</option>
+              <option>Have read</option>
+            </select>
+            <input type="text" class="input input-bordered" asp-for="UserBook.Notes" />
             
             @* <input type="text" value="hello!" asp-for="OpenLibraryBook.q" /> *@
             <input type="submit" class="btn btn-primary" value="Add" />
