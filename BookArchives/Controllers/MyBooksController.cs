@@ -55,7 +55,16 @@ public class MyBooksController : Controller
         // makes sure it doesn't reference something that is empty 
         if (userBook.bookCoverUrl != "notFound")
         {
-            userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
+            try
+            {
+                userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
+
+            }
+            catch
+            {
+                combinedUserBookOpenLibrary.Found = false;
+                return View("Add", combinedUserBookOpenLibrary);
+            }
             combinedUserBookOpenLibrary.Found = true;
 
         }
