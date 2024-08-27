@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYGO4mD3jaUaDT376jIhudgAAAAACAAAAAAAQZgAAAAEAACAAAAC4h1ZnxPP/WbYn0rIAoLaWA5tknLf/I+1ybdVViPPCWAAAAAAOgAAAAAIAACAAAACNopsotTEH28vUq1+QrRchOwI6HsDQz7r0CO5vZVcIbIAAAAAYwVvmAHaxY5WgHruaAPA8n4UabDgF3Ks30K9FPxDuLJCPp/0A8bDVr1NXwY/JsZfyV0loPlvC1RPMIVvPzVDIN+WcunoDBGXsfILWIvCs111puz/EBsyXLKj3Z/3G4A8hIlfCPlJQ0Wd+XWWvq6HcrfpFiHYbkpQ6HFcyTe/w8UAAAABtzYe4As0FDK9tqKGp9OuXzwMCDZ7yIOCGbbkHtDARAtOq6JdRlP5T6i8BZxN4OFFLCym5g2LHT9UVSR7AoUHz</EncryptedPassword>
+    <History>True|2024-08-26T22:25:25.5689576Z||;True|2024-08-26T23:06:39.0581717+01:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ArchiveUserDbContextConnection">
+      <Value>Data Source=bookarchivesdbserver.database.windows.net,1433%3bInitial Catalog=BookArchives_db%3bUser ID=ahm3d_ka%3bPassword=2006Veloss.%28%29</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=bookarchivesdbserver.database.windows.net,1433%3bInitial Catalog=BookArchives_db%3bUser ID=ahm3d_ka%3bPassword=2006Veloss.%28%29</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BookArchives.Areas.Identity.Data.ArchiveUserDbContext">
+      <Value>Data Source=bookarchivesdbserver.database.windows.net,1433%3bInitial Catalog=BookArchives_db%3bUser ID=ahm3d_ka%3bPassword=2006Veloss.%28%29</Value>
+    </EFMigrations>
+    <EFMigrations Include="BookArchives.Data.ApplicationDbContext">
+      <Value>Data Source=bookarchivesdbserver.database.windows.net,1433%3bInitial Catalog=BookArchives_db%3bUser ID=ahm3d_ka%3bPassword=2006Veloss.%28%29</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

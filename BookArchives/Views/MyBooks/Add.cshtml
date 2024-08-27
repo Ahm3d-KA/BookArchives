@@ -8,11 +8,14 @@
     <button type="submit" class="btn btn-active btn-secondary">Search</button>
 </form>
 
-@if (Model!= null)
+@if (Model is not null)
 {
-    @if (Model.OpenLibraryBook.docs != null)
+    
+    @if (Model.Found == true)
     {
-
+        @if (Model.OpenLibraryBook is not null)
+        {
+            
         var item = Model.OpenLibraryBook.docs[0];
         <article class="prose">
             <p>@item.title
@@ -20,7 +23,7 @@
             @item.ddc_sort
             @item.ratings_average</p>
         </article>
-
+    
         <img src="@Model.OpenLibraryBook.bookCoverUrl" alt="@Model.OpenLibraryBook.docs[0].title"/>
         @* <button class="btn btn-primary">I have read this book</button> *@
         
@@ -61,8 +64,8 @@
             @*   <option>Currently Reading</option> *@
             @*   <option>Read</option> *@
             @* </select> *@
-
-
+    
+    
             <input type="text" value=@item.title asp-for="UserBook.BookName" />
             <select class="select select-bordered w-full max-w-xs" asp-for="UserBook.ReadingStatus">
               <option disabled selected>Reading Status</option>
@@ -76,6 +79,8 @@
             <input type="submit" class="btn btn-primary" value="Add" />
             
         </form>
+        }
+    
         
     }
     else
@@ -84,10 +89,4 @@
             <h4>Book cannot be found</h4>
         </article>
     }
-}
-else
-{
-    <article class="prose">
-        <h4>Book cannot be found</h4>
-    </article>
 }

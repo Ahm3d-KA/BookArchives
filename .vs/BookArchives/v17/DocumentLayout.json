@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\bookarchives.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\bookarchives.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\bookarchives.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\bookarchives.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|c:\\users\\ahmed_eyhnpij\\riderprojects\\full stack web apps\\bookarchives\\bookarchives\\models\\combineduserbookopenlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A564803E-3205-43E2-A5AF-1C4A3CB62A2D}|BookArchives\\BookArchives.csproj|solutionrelative:bookarchives\\models\\combineduserbookopenlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "BookArchives\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "BookArchives\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-26T22:24:28.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tailwind.config.js",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\tailwind.config.js",
+              "RelativeDocumentMoniker": "BookArchives\\tailwind.config.js",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\tailwind.config.js",
+              "RelativeToolTip": "BookArchives\\tailwind.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-26T22:24:25.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookArchives",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\BookArchives.csproj",
+              "RelativeDocumentMoniker": "BookArchives\\BookArchives.csproj",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\BookArchives.csproj",
+              "RelativeToolTip": "BookArchives\\BookArchives.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-26T22:21:02.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\package.json",
+              "RelativeDocumentMoniker": "BookArchives\\package.json",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\package.json",
+              "RelativeToolTip": "BookArchives\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T22:19:50.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\appsettings.json",
+              "RelativeDocumentMoniker": "BookArchives\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\appsettings.json",
+              "RelativeToolTip": "BookArchives\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T22:19:06.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookArchives",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\BookArchives.csproj",
+              "RelativeDocumentMoniker": "BookArchives\\BookArchives.csproj",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\BookArchives.csproj",
+              "RelativeToolTip": "BookArchives\\BookArchives.csproj",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-26T22:18:43.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "BookArchives\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "BookArchives\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T22:17:59.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Program.cs",
+              "RelativeDocumentMoniker": "BookArchives\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Program.cs",
+              "RelativeToolTip": "BookArchives\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T22:17:45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BookArchives\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BookArchives\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T22:17:27.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CombinedUserBookOpenLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Models\\CombinedUserBookOpenLibrary.cs",
+              "RelativeDocumentMoniker": "BookArchives\\Models\\CombinedUserBookOpenLibrary.cs",
+              "ToolTip": "C:\\Users\\ahmed_eyhnpij\\RiderProjects\\Full Stack Web Apps\\BookArchives\\BookArchives\\Models\\CombinedUserBookOpenLibrary.cs",
+              "RelativeToolTip": "BookArchives\\Models\\CombinedUserBookOpenLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T21:45:41.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

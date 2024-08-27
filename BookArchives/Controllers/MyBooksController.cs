@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using BookArchives.Data;
+﻿using BookArchives.Data;
 using BookArchives.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,11 +21,14 @@ public class MyBooksController : Controller
     public IActionResult Index()
     {
         List<UserBooksModel> objUserBooksList = new List<UserBooksModel>();
-        foreach (UserBooksModel item in _db.ArchiveDb)
+        foreach (var item in _db.ArchiveDb)
         {
-            if (item.ArchiveUserName == HttpContext.User.Identity.Name)
+            if (HttpContext.User.Identity is not null)
             {
-                objUserBooksList.Add(item);
+                if (item.ArchiveUserName == HttpContext.User.Identity.Name)
+                {
+                    objUserBooksList.Add(item);
+                }
             }
         }
         return View(objUserBooksList);
@@ -47,15 +49,21 @@ public class MyBooksController : Controller
         // replaces spaces with +
         string formattedTitle = title.Replace(" ", "+");
         
+        CombinedUserBookOpenLibrary combinedUserBookOpenLibrary = new CombinedUserBookOpenLibrary();
         
         OpenLibraryBook userBook = await SearchBooksAsync(formattedTitle);
         // makes sure it doesn't reference something that is empty 
-        if (userBook.docs != null)
+        if (userBook.bookCoverUrl != "notFound")
         {
             userBook.bookCoverUrl = CreateCoverUrl(userBook.docs[0].cover_i);
+            combinedUserBookOpenLibrary.Found = true;
+
+        }
+        else
+        {
+            combinedUserBookOpenLibrary.Found = false;
         }
 
-        CombinedUserBookOpenLibrary combinedUserBookOpenLibrary = new CombinedUserBookOpenLibrary();
         combinedUserBookOpenLibrary.OpenLibraryBook = userBook;
         return View("Add", combinedUserBookOpenLibrary);
         
@@ -75,7 +83,18 @@ public class MyBooksController : Controller
         // see if database operation works and user is logged in
         try
         {
-            userBook.ArchiveUserName = HttpContext.User.Identity.Name;
+            if (HttpContext.User.Identity is not null)
+            {
+                if (HttpContext.User.Identity.Name is not null)
+                {
+                    userBook.ArchiveUserName = HttpContext.User.Identity.Name;
+                    
+                }
+            }
+            else
+            {
+                return Json(new { status = "error", message = "Not logged in" });
+            }
             
             foreach (UserBooksModel item in _db.ArchiveDb)
             {
@@ -118,12 +137,21 @@ public class MyBooksController : Controller
         {
             var content = await response.Content.ReadAsStringAsync();
             var searchResult = System.Text.Json.JsonSerializer.Deserialize<OpenLibraryBook>(content);
-            return searchResult;
+            if (searchResult is not null)
+            {
+                return searchResult;
+            }
+
+            OpenLibraryBook notFoundResult = new OpenLibraryBook(); 
+            notFoundResult.bookCoverUrl = "notFound";
+            return notFoundResult;
         }
         else
         {
             // Handle the case where the API call was not successful
-            return null;
+            OpenLibraryBook notFoundResult = new OpenLibraryBook(); 
+            notFoundResult.bookCoverUrl = "notFound";
+            return notFoundResult;
         }
     }
 

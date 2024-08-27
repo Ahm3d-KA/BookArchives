@@ -9,12 +9,17 @@ public class UserBooksModel
     [Key]
     [Required]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public string Id { get; set; }
-    public string ArchiveUserName { get; set; }
+    public string? Id { get; init; }
+    [MaxLength(100)]
+    public string? ArchiveUserName { get; set; }
+    [MaxLength(100)]
     public string? BookName { get; set; }
     // public DateTime DateStarted { get; set; }
-    // public DateTime DateFinished { get; set; }
+    // public DateTime DateFinished { get; eset; }
     public int? Rating { get; set; }
+    [MaxLength(1000)]
     public string? Notes { get; set; }
-    public string ReadingStatus { get; set; }
+    [MaxLength(100)]
+    // MAKE SURE INPUT REFLECTS THIS
+    public string? ReadingStatus { get; set; }
 }

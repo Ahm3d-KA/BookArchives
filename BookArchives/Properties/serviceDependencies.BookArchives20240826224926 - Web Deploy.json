@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/BookArchives20240826224926/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefaultConnection_4D40F25EC2",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/bookarchivesdbserver/databases/BookArchives_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaultConnection",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/BookArchives20240826224926/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsArchiveUserDbContextCon_BEF45B289A",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/bookarchivesdbserver/databases/BookArchives_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ArchiveUserDbContextConnection",
+      "dynamicId": null
+    }
+  }
+}
